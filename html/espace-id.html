@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta name="author" content="Marius Brucker">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Seichi - Mon Espace</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/typo.css">
+    <link rel="stylesheet" href="../css/style%20(2).css">
+</head>
+<body id="espace_page">
+  <div class="overlay_menu"></div>
+<header>
+            
+        <a id="logo" href="../index.html"><img src="../images/image%201.svg" alt="Logo du site : Seichi"></a>
+            
+        <span id="mon_espace">
+            <a>Gaëlle FRANÇOIS</a>
+            <br>
+            <a id="monespace" href="espace.html" class="text-red medium">Mon espace</a>
+        </span>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a  href="events.html">Nos événements</a></li>
+                <li><a  href="soiree.html">Nos Soirées</a></li>
+                <li><a  href="culture.html">Un peu de culture</a></li>
+                <li><a  href="partenaires.html">Nos partenaires</a></li>
+                <li><a  href="contact.html">Nous contacter</a></li>
+            </ul>
+        </nav>
+        <span id="deconnecter">
+            <a id="monespace" class="text-red medium" href="connexion.html">Se Déconnecter</a>
+        </span>
+    </header>
+    <main>
+      <div class="btn_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+<!-- Abi Inscription -->
+       <div class="saison_select">
+            <ul class="select_wrap">
+                <li class="printemps">
+                    
+                    <p class="titre_saison">MON ESPACE</p>
+                    <p class="nom_utilisateur"> <br>Modifier le profil</p>
+                </li>
+            </ul>        
+        </div>
+        <div id="profil">
+          <div id="cercle"></div>
+           <div id="setting1">
+            <img src="../images/settings%202.png" alt="modifier votre profil">
+            </div>
+        </div>
+        <div id="inscription_text">
+          <h2>Mes informations</h2>
+            <form method="post" enctype="multipart/form-data">
+               <input placeholder="François" type="text" id="nom" name="nom" maxlength="200">
+               <br>
+               <input  placeholder="Gaëlle" type="text" id="prenom" name="prenom" maxlength="200">
+               <br>
+               <input  placeholder="12/06/96" type="text" id="birthday" name="birthday" maxlength="200">
+               <br>
+               <div id="right">
+               <input placeholder="gaellefrcs@gmail.com" type="email" id="mail" name="mail" maxlength="200">
+               <br>
+               <input  placeholder="**************" type="password" id="mdp" name="mdp" pattern="[0-9A-Za-z]{10,50}">
+               </div>
+            </form>
+            <button id="button_enregistrer" onclick="openEng()">Enregistrer</button>
+            </div>
+            <div id="enregistrer">
+            <div id="enreg">
+            <h2>Modifications sauvegardées</h2>
+            <p>Toutes les données ont bien été sauvegardées</p>
+            </div>
+            <a href="espace.html">
+            <button id="close_enregistrer" onclick="closeEng()">Retour</button>
+                </a>
+            </div>
+    </main>
+    <script src="../js/app.js" type="text/javascript"></script>
+    <script src="../lib/jquery.js"></script>
+    <script src="../js/slider.js"></script>
+</body>
+</html>
